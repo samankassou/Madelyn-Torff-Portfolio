@@ -166,6 +166,7 @@ header {
 
 .section {
   padding: 0 226px;
+  margin-bottom: 144px;
   &__heading {
     font-family: $HeadingFont;
     font-weight: 700;
@@ -180,7 +181,7 @@ header {
   border-radius: 24px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  box-shadow: 0px, 6px rgba(112, 114, 176, 0.1);
+  filter: drop-shadow(0px 6px 64px rgba(112, 114, 176, 0.1));
   &__info {
     padding: 62px 168px;
   }
@@ -206,5 +207,28 @@ header {
     border-radius: 24px;
     color: $textHighEmphasis;
     background-color: #ffffff;
+  }
+}
+.footer {
+  margin-bottom: 80px;
+  &__socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 54px;
+
+    li {
+      margin-right: 24px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &__text {
+    text-align: center;
+    font-family: $textFont;
+    font-size: 16px;
+    font-weight: 400;
+    color: $textMediumEmphasis;
   }
 }
