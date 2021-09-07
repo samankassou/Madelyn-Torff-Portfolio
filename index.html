@@ -10,61 +10,73 @@
 </head>
 <body>
     <header>
-        <div id="logo"></div>
-        <nav></nav>
-        <section>
-            <h1>ui/ux designer</h1>
-            <p>Hello, my name is Madelyn Torff</p>
-            <p>
-                Short text with details about you, what you do or your professional career. You can add more information on the about
-                page.
-            </p>
+        <div class="nav">
+            <div id="logo">Madelyn Torff</div>
+            <nav class="nav-links">
+                <a href="#" class="nav-links__link">About</a>
+                <a href="#" class="nav-links__link">Projects</a>
+                <a href="#" class="nav-links__link">Contacts</a>
+            </nav>
+        </div>
+        <section class="home">
+            <div class="home__text">
+                <h1 class="home__title">ui/ux designer</h1>
+                <p class="home__name">Hello, my name is Madelyn Torff</p>
+                <p class="home__description">
+                    Short text with details about you, what you do or your professional career. You can add more information on the
+                    about
+                    page.
+                </p>
+                <div class="home_cta">
+                    <a href="#" class="home__btn home__btn--primary">Projects</a>
+                    <a href="#" class="home__btn">LinkedIn</a>
+                </div>
+            </div>
             <div>
-                <a href="#">Projects</a>
-                <a href="#">LinkedIn</a>
+                <img src="/assets/images/pexels-artem-beliaikin-1832323-removebg-preview.png">
             </div>
         </section>
     </header>
-    <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <div class="projects__list">
-            <div class="projects__item">
-                <div class="projects__info">
-                    <h3>Project Name</h3>
-                    <p>
+    <section id="projects" class="section">
+        <h2 class="section__heading">Projects</h2>
+        <div class="section__content">
+            <div class="project">
+                <div class="project__info">
+                    <h3 class="project__heading">Project Name</h3>
+                    <p class="project__description">
                         I created this personal project in order to show how to create an interface in Figma using a portfolio as an
                         example.
                     </p>
-                    <button>View Project</button>
+                    <button class="project__btn">View Project</button>
                 </div>
             </div>
-            <div class="projects__item">
-                <div class="projects__info">
-                    <h3>Project Name</h3>
-                    <p>
+            <div class="project">
+                <div class="project__info">
+                    <h3 class="project__heading">Project Name</h3>
+                    <p class="project__description">
                         What was your role, your deliverables, if the project was personal, freelancing.
                     </p>
-                    <button>View Project</button>
+                    <button class="project__btn">View Project</button>
                 </div>
             </div>
-            <div class="projects__item">
-                <div class="projects__info">
-                    <h3>Project Name</h3>
-                    <p>
+            <div class="project">
+                <div class="project__info">
+                    <h3 class="project__heading">Project Name</h3>
+                    <p class="project__description">
                         IYou can also add in this description the type of the project, if it was for web, mobile, electron.
                     </p>
-                    <button>View Project</button>
+                    <button class="project__btn">View Project</button>
                 </div>
             </div>
         </div>
     </section>
-    <footer>
-        <ul class="socials">
+    <footer class="footer">
+        <ul class="footer__socials">
             <li><img src="/assets/images/Vectorsocials_.png"></li>
             <li><img src="/assets/images/bi_linkedinsocials_.png"></li>
             <li><img src="/assets/images/bi_envelope-fillsocials_.png"></li>
         <ul/>
-        <p>Madelyn Torff 2021</p>
+        <p class="footer__text">Madelyn Torff 2021</p>
     </footer>
     <script src="/assets/js/app.js"></script>
 </body>
