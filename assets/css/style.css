@@ -47,6 +47,7 @@ body {
   overflow-x: hidden;
 }
 
+/* === header === */
 header {
   min-height: 100vh;
   position: relative;
@@ -172,5 +173,60 @@ header {
   width: 100%;
   position: absolute;
   top: 0;
+}
+
+/* === main === */
+.section {
+  padding: 0 226px;
+}
+
+.section__heading {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 48px;
+  text-align: center;
+  color: #25282b;
+}
+
+.project {
+  margin: 80px auto;
+  background-color: #ffffff;
+  border-radius: 24px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-shadow: 0px, 6px rgba(112, 114, 176, 0.1);
+          box-shadow: 0px, 6px rgba(112, 114, 176, 0.1);
+}
+
+.project__info {
+  padding: 62px 168px;
+}
+
+.project__heading {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  color: #25282b;
+}
+
+.project__description {
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #828282;
+  line-height: 27px;
+  margin: 24px auto;
+}
+
+.project__btn {
+  font-family: "Roboto", sans-serif;
+  padding: 8px 24px;
+  border: 1px solid #25282b;
+  border-radius: 24px;
+  color: #25282b;
+  background-color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

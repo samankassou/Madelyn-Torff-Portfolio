@@ -55,6 +55,8 @@ body {
   background-color: $bgGrayColor;
   overflow-x: hidden;
 }
+
+/* === header === */
 header {
   min-height: 100vh;
   position: relative;
@@ -157,5 +159,52 @@ header {
       position: absolute;
       top: 0;
     }
+  }
+}
+
+/* === main === */
+
+.section {
+  padding: 0 226px;
+  &__heading {
+    font-family: $HeadingFont;
+    font-weight: 700;
+    font-size: 48px;
+    text-align: center;
+    color: $textHighEmphasis;
+  }
+}
+.project {
+  margin: 80px auto;
+  background-color: #ffffff;
+  border-radius: 24px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: 0px, 6px rgba(112, 114, 176, 0.1);
+  &__info {
+    padding: 62px 168px;
+  }
+  &__heading {
+    font-family: $HeadingFont;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: $textHighEmphasis;
+  }
+  &__description {
+    font-family: $textFont;
+    font-size: 18px;
+    font-weight: 400;
+    color: $textMediumEmphasis;
+    line-height: 27px;
+    margin: 24px auto;
+  }
+  &__btn {
+    font-family: $btnFont;
+    padding: 8px 24px;
+    border: 1px solid $bglineColor;
+    border-radius: 24px;
+    color: $textHighEmphasis;
+    background-color: #ffffff;
   }
 }
