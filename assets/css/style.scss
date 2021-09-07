@@ -1,6 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Playfair+Display:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import "fonts";
 
 /* === variables === */
 $primaryColor: #fdc435;
@@ -220,6 +218,11 @@ header {
     border-radius: 24px;
     color: $textHighEmphasis;
     background-color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover {
+      background-color: $primaryColor;
+    }
   }
 }
 .footer {
@@ -234,6 +237,13 @@ header {
       margin-right: 24px;
       &:last-child {
         margin-right: 0;
+      }
+      &:hover img {
+        opacity: 0.3;
+      }
+      img {
+        transition: 0.5s ease;
+        backface-visibility: hidden;
       }
     }
   }
