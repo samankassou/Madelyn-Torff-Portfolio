@@ -43,6 +43,134 @@ button:focus {
 
 /* === Global styles === */
 body {
-  background-color: #e5e5e5;
+  background-color: #f9faff;
+  overflow-x: hidden;
+}
+
+header {
+  min-height: 100vh;
+  position: relative;
+  background-image: url("../images/yellow-bg.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  color: #25282b;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px 120px;
+}
+
+.nav__logo {
+  font-family: "Comfortaa";
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.nav a {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #25282b;
+  text-decoration: none;
+  margin-left: 48px;
+  -webkit-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+.nav a:nth-child(1) {
+  margin-left: 0;
+}
+
+.nav a:hover {
+  color: #ffffff;
+}
+
+.home {
+  margin-top: 54px;
+  padding: 0 120px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.home__text {
+  padding-right: 114px;
+}
+
+.home__title {
+  font-family: "Nunito", sans-serif;
+  color: #fdc435;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  line-height: 27px;
+  margin-bottom: 12px;
+}
+
+.home__name {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 64px;
+  color: #25282b;
+  line-height: 76px;
+}
+
+.home__description {
+  font-family: "Nunito", sans-serif;
+  color: #828282;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 32px auto;
+}
+
+.home__btn {
+  text-decoration: none;
+  padding: 8px 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #25282b;
+  border-radius: 8px;
+  border-color: #25282b;
+  border-width: 2px;
+  -webkit-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+}
+
+.home__btn:nth-child(1) {
+  margin-right: 12px;
+}
+
+.home__btn:hover {
+  background-color: #fdc435;
+  border-color: #fdc435;
+}
+
+.home__btn--primary {
+  background-color: #fdc435;
+  border-color: #fdc435;
+}
+
+.home__img-box {
+  position: relative;
+}
+
+.home__img-box img {
+  width: 100%;
+  position: absolute;
+  top: 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,8 +5,12 @@
 /* === variables === */
 $primaryColor: #fdc435;
 $secondaryColor: #25282b;
-$grayColor: #828282;
-$bodyBgColor: #e5e5e5;
+$bgGrayColor: #f9faff;
+$bgWhiteColor: #ffffff;
+$bglineColor: #25282b;
+$textHighEmphasis: #25282b;
+$textMediumEmphasis: #828282;
+$textLowEmphasis: #9a9fa8;
 $HeadingFont: "Playfair Display", serif;
 $navLinkFont: "Raleway", sans-serif;
 $textFont: "Nunito", sans-serif;
@@ -48,5 +52,110 @@ button:focus {
 
 /* === Global styles === */
 body {
-  background-color: $bodyBgColor;
+  background-color: $bgGrayColor;
+  overflow-x: hidden;
+}
+header {
+  min-height: 100vh;
+  position: relative;
+  background-image: url("../images/yellow-bg.png");
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  color: $textHighEmphasis;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 120px;
+
+  &__logo {
+    font-family: "Comfortaa";
+    font-weight: 700;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  a {
+    font-family: $navLinkFont;
+    font-weight: 500;
+    font-size: 18px;
+    color: $textHighEmphasis;
+    text-decoration: none;
+    margin-left: 48px;
+    transition: color 0.3s ease;
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
+.home {
+  margin-top: 54px;
+  padding: 0 120px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  &__text {
+    padding-right: 114px;
+  }
+  &__title {
+    font-family: $textFont;
+    color: $primaryColor;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 27px;
+    margin-bottom: 12px;
+  }
+  &__name {
+    font-family: $HeadingFont;
+    font-weight: 700;
+    font-size: 64px;
+    color: $textHighEmphasis;
+    line-height: 76px;
+  }
+  &__description {
+    font-family: $textFont;
+    color: $textMediumEmphasis;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 32px auto;
+  }
+  &__btn {
+    text-decoration: none;
+    padding: 8px 24px;
+    font-family: $btnFont;
+    font-weight: 500;
+    font-size: 18px;
+    color: $textHighEmphasis;
+    border-radius: 8px;
+    border-color: $bglineColor;
+    border-width: 2px;
+    transition: background-color 0.3s ease;
+    &:nth-child(1) {
+      margin-right: 12px;
+    }
+    &:hover {
+      background-color: $primaryColor;
+      border-color: $primaryColor;
+    }
+    &--primary {
+      background-color: $primaryColor;
+      border-color: $primaryColor;
+    }
+  }
+  &__img-box {
+    position: relative;
+
+    img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+    }
+  }
 }
