@@ -15,6 +15,10 @@ $textFont: "Nunito", sans-serif;
 $btnFont: "Roboto", sans-serif;
 
 /* === base styles === */
+html.sr {
+  scroll-behavior: smooth;
+  visibility: hidden;
+}
 h1,
 h2,
 h3,
@@ -141,7 +145,7 @@ header {
       margin-right: 12px;
     }
     &:hover {
-      background-color: $primaryColor;
+      background-color: rgba($color: $primaryColor, $alpha: 0.3);
       border-color: $primaryColor;
     }
     &--primary {
@@ -155,7 +159,8 @@ header {
     img {
       width: 100%;
       position: absolute;
-      top: 0;
+      top: -20%;
+      right: -15%;
     }
   }
 }

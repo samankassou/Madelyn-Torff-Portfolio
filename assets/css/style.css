@@ -110,6 +110,11 @@
 
 /* === variables === */
 /* === base styles === */
+html.sr {
+  scroll-behavior: smooth;
+  visibility: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -263,7 +268,7 @@ header {
 }
 
 .home__btn:hover {
-  background-color: #fdc435;
+  background-color: rgba(253, 196, 53, 0.3);
   border-color: #fdc435;
 }
 
@@ -279,7 +284,8 @@ header {
 .home__img-box img {
   width: 100%;
   position: absolute;
-  top: 0;
+  top: -20%;
+  right: -15%;
 }
 
 /* === main === */
